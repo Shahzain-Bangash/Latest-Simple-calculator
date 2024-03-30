@@ -2,9 +2,9 @@
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
-  { message: "Enter the First number: ", type: "number", name: "First_Number" },
+  { message: "Enter your First number: ", type: "number", name: "First_Number" },
   {
-    messege: "Enter the Second number: ",
+    messege: "Enter your Second number: ",
     type: "number",
     name: "Second_Number",
   },
@@ -30,3 +30,5 @@ if (answer.opr == "Addition") {
 } else {
   console.log("Operator Not Found!");
 }
+
+console.log("The End");
